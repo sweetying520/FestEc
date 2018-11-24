@@ -28,5 +28,11 @@ dependencies {
 
     api rootProject.ext.dependencies["libConstraintLayout"]
     api rootProject.ext.dependencies["libCompat"]
+    api rootProject.ext.dependencies["libRetrofit"]
+    api rootProject.ext.dependencies["libConverterGson"]
+    api rootProject.ext.dependencies["libScalars"]
+    api rootProject.ext.dependencies["libCallAdapterRxjava"]
+
+    //moudule
     api project(':latte_annotation')
 }
