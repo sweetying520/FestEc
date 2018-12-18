@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -28,11 +29,23 @@ dependencies {
 
     api rootProject.ext.dependencies["libConstraintLayout"]
     api rootProject.ext.dependencies["libCompat"]
+
+    //fragmentation
+    api rootProject.ext.dependencies["libFragmentation"]
+    api rootProject.ext.dependencies["libFragmentationSwipeback"]
+
+    //butterknife
+    annotationProcessor rootProject.ext.dependencies["libButterknifeAnnotation"]
+    api rootProject.ext.dependencies["libButterknife"]
+
+    //retrofit
     api rootProject.ext.dependencies["libRetrofit"]
     api rootProject.ext.dependencies["libConverterGson"]
     api rootProject.ext.dependencies["libScalars"]
     api rootProject.ext.dependencies["libCallAdapterRxjava"]
 
-    //moudule
+
+
+    //module
     api project(':latte_annotation')
 }

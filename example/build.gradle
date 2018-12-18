@@ -20,6 +20,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+
     implementation project(':latte_ec')
-    implementation project(':latte_compiler')
+    annotationProcessor project(':latte_compiler')
+
+    //butterknife
+    annotationProcessor rootProject.ext.dependencies["libButterknifeAnnotation"]
 }
